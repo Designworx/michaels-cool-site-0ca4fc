@@ -1,0 +1,14 @@
+<div class="w-dyn-list">
+                  {%- unless collection.length == 0 -%}<div role="list" class="mega-menu-list-wrapper w-dyn-items">
+                    {%- for item in collection -%}<div role="listitem" class="menu-collection-list-item w-dyn-item">
+                      <a href="{{ item.url }}" class="post-list-item category-list-item w-inline-block">
+                        <div class="stacked-description">
+                          <div class="list-item-text">{{ item.data.title }}</div>
+                        </div><img src="/assets/images/arrow-right48x482x.svg" loading="lazy" id="w-node-_4541705a-de97-7f82-8818-9c9145464680-4546467a" alt="" class="list-item-arrow">
+                      </a>
+                    </div>{%- endfor -%}
+                  </div>{%- endunless -%}
+                  {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>{%- endif -%}
+                </div>

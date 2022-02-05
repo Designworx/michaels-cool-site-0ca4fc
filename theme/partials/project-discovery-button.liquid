@@ -1,0 +1,55 @@
+<div class="more-projects-wrapper in-page">
+    <div class="project-gallery-wrapper">
+      <div class="grid-wrapper projects-search">
+        <div id="w-node-_397244f1-6d58-8f51-019c-f7e5a2b1e41a-f9270e17" class="project-discovery-wrapper">
+          <div id="w-node-_849e754c-a02b-b240-b303-2bf5e8a0db81-f9270e17" class="project-discovery-cover two"></div>
+          <div id="w-node-a30333d2-032c-03e5-f1b1-a5d31eb7f5e4-f9270e17" class="gallery-items-wrapper">
+            <div class="project-discovery-list">
+              <div class="gallery-heading">
+                <h3 class="heading-2">Explore our work</h3>
+              </div>
+              {%- assign collection = collections.projects -%}<div id="scrollbar" class="project-search-collection w-dyn-list">
+                {%- unless collection.length == 0 -%}<div role="list" class="project-search-items w-dyn-items">
+                  {%- for item in collection -%}<div role="listitem" class="project-search-collection-item w-dyn-item">
+                    <a href="{{ item.url }}" class="menu-list-item discovery-item w-inline-block">
+                      <div id="w-node-c47dbc6c-9b93-d53a-3ac5-94688c374a85-f9270e17" class="stacked-description short">
+                        <div class="list-item-text subtitle grey">{{ item.data.f_date | formatDate: "d.M.yy" }}</div>
+                        <div class="list-item-text">{{ item.data.title }}</div>
+                      </div><img src="/assets/images/arrow-right48x482x.svg" loading="lazy" id="w-node-_6ad8919c-2309-2a37-80a2-1e0756464dfe-f9270e17" alt="" class="list-item-arrow">
+                    </a>
+                  </div>{%- endfor -%}
+                </div>{%- endunless -%}
+                {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>{%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-_24909537-2aef-fa73-cf08-5d19c7632e15-f9270e17" class="project-discovery-cover one"></div>
+        <div class="project-gallery-overlay"></div>
+      </div>
+      <div class="more-projects-wrapper">
+        <div class="grid-wrapper fixed">
+          <div id="w-node-a30333d2-032c-03e5-f1b1-a5d31eb7f5f0-f9270e17" data-w-id="a30333d2-032c-03e5-f1b1-a5d31eb7f5f0" class="fly-out-button on-click">
+            <div id="w-node-a30333d2-032c-03e5-f1b1-a5d31eb7f5f1-f9270e17" class="projects-lottie-wrapper">
+              <div data-w-id="a30333d2-032c-03e5-f1b1-a5d31eb7f5f2" data-animation-type="lottie" data-src="/assets/documents/project-open-dropdown.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2.4791666666666665" data-duration="0" data-ix2-initial-state="0" class="projects-lottie"></div>
+            </div>
+            <div id="w-node-a30333d2-032c-03e5-f1b1-a5d31eb7f5f3-f9270e17" class="subtitle">Discover projects</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-wrapper project-discovery-grid">
+      <div id="w-node-c1267971-e98a-4887-2b61-4f4973f4569f-f9270e17" class="discovery-button-wrapper">
+        <div id="w-node-_93ff6921-d28d-6640-4312-da6eaaed889e-f9270e17" class="fly-out-button-wrapper">
+          <div data-w-id="fc177a8e-c247-e188-8355-4c56f9270e19" class="fly-out-button off-click">
+            <div id="w-node-fc177a8e-c247-e188-8355-4c56f9270e1a-f9270e17" class="projects-lottie-wrapper">
+              <div data-w-id="fc177a8e-c247-e188-8355-4c56f9270e1b" data-animation-type="lottie" data-src="/assets/documents/project-open-dropdown.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2.4791666666666665" data-duration="0" data-ix2-initial-state="0" class="projects-lottie"></div>
+            </div>
+            <div id="w-node-fc177a8e-c247-e188-8355-4c56f9270e1c-f9270e17" class="subtitle">Discover projects</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
